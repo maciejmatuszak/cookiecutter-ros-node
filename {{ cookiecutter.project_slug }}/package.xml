@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>{{cookiecutter.project_slug}}</name>
+    <version>{{cookiecutter.version}}</version>
+    <description>
+        {{cookiecutter.description}}
+    </description>
+
+    <maintainer email="{{cookiecutter.email}}">{{cookiecutter.full_name}}</maintainer>
+    <license>{{cookiecutter.license}}</license>
+
+    <!-- Dependencies -->
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>std_msgs</depend>
+    <depend>roscpp</depend>
+
+</package>

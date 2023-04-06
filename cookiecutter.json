@@ -1,0 +1,28 @@
+{
+  "full_name": "Maciej Matuszak",
+  "email": "maciej.matuszak@not-telling.com",
+  "project_name": "ROS Cookie",
+  "project_slug": "ros_cookie",
+  "version": "1.0.0",
+  "description": "ROS Cookie Node with library and executable",
+  "license": [
+    "MIT",
+    "BSD-3",
+    "GNU GPL v3.0",
+    "Apache Software License 2.0",
+    "Proprietary"
+  ],
+  "clang_format_style": [
+    "Microsoft",
+    "GNU",
+    "LLVM",
+    "Google",
+    "Chromium",
+    "Mozilla",
+    "WebKit"
+  ],
+  "clang_format_executable": "auto",
+  "_extensions": [
+    "jinja2_strcase.StrcaseExtension"
+  ]
+}
