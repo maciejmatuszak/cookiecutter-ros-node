@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="{{cookiecutter.project_slug}}" type="{{cookiecutter.project_slug}}_node" name="{{cookiecutter.project_slug}}" respawn="true"/>
-</launch>

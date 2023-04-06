@@ -29,9 +29,9 @@ void
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "dep1_node");
+    ros::init(argc, argv, "{{ cookiecutter.project_slug }}_node");
     ros::NodeHandle       nh;
-    [[maybe_unused]] auto monitor_node = {{cookiecutter.project_slug}}::{{cookiecutter.project_slug | to_camel }}Node{nh};
+    [[maybe_unused]] auto {{cookiecutter.project_slug}}_node = {{cookiecutter.project_slug}}::{{cookiecutter.project_slug | to_camel }}Node{nh};
     ros::spin();
     return 0;
 }
