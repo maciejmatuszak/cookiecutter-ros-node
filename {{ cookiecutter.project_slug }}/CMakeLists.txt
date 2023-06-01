@@ -1,8 +1,18 @@
 cmake_minimum_required(VERSION 3.6)
-project({{cookiecutter.project_slug}})
+project({{cookiecutter.project_slug}} VERSION {{cookiecutter.version}} LANGUAGES CXX)
 
+# Set CMake policies for this project
+
+# We allow <Package>_ROOT (env) variables for locating dependencies
+cmake_policy(SET CMP0074 NEW)
+
+# Initialize some default paths
+include(GNUInstallDirs)
+
+# Define the minimum C++ standard that is required
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED YES)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 
 find_package(catkin REQUIRED COMPONENTS
